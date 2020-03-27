@@ -1,11 +1,16 @@
 {
   "name": "puppeteer-scraping",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
+  "main": "index.js",
+  "description": "Blazing fast scraping with Puppeteer.",
+  "repository": "samy-mnasri/puppeteer-scraping",
   "scripts": {
+    "test": "node _test.js",
     "publish:npm": "npm publish --access=public"
   },
   "devDependencies": {
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^2.1.1",
+    "standard": "^14.3.3"
   }
 }
