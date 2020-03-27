@@ -1,0 +1,11 @@
+{
+  "name": "puppeteer-scraping",
+  "version": "1.0.2",
+  "license": "MIT",
+  "scripts": {
+    "publish:npm": "npm publish --access=public"
+  },
+  "devDependencies": {
+    "puppeteer": "^2.1.1"
+  }
+}
