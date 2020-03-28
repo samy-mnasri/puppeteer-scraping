@@ -1,5 +1,5 @@
 module.exports = async ({ options, puppeteer, method }) => {
-  const context = {}
+  const context = { items: [] }
 
   const browser = await puppeteer.launch(options)
   context.page = await browser.newPage()
