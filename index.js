@@ -47,7 +47,7 @@ module.exports = async ({ options, puppeteer, method }) => {
           }
         }
 
-        item = (await itemMethod.processItem(item)) || item
+        item = (await itemMethod.processItem(item, context)) || item
 
         if (context.items[itemMethod.type]) {
           context.items[itemMethod.type].push(item)
