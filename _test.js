@@ -3,15 +3,13 @@ const puppeteer = require('puppeteer')
 const scraping = require('./index')
 
 const main = async () => {
-  const data = await scraping({
+  const { items } = await scraping({
     puppeteer,
     options: { headless: true },
-    method: {
-      firstPage: 'https://example.com'
-    }
+    method: { startPage: 'https://example.com' }
   })
 
-  console.log(data)
+  console.log(items)
 }
 
 main()

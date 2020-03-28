@@ -1,11 +1,21 @@
 module.exports = {
-  firstPage: String,
-  nextPage: Function,
-  pages: {
+  startPage: String,
+  nextPage: Function, // context => {}
+  goToPages: {
     path: String,
-    items: {
-      name: { path: String }
-    },
-    processItems: Function
+    items: [
+      {
+        type: String,
+        data: {
+          propertyName: {
+            path: String,
+            getFirst: Boolean,
+            value: Function // context => {}
+            // isId: Boolean
+          }
+        },
+        processItem: Function // (item, context) => {}
+      }
+    ]
   }
 }
