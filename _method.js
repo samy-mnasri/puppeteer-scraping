@@ -3,6 +3,7 @@ module.exports = {
   nextPage: Function, // context => {}
   goToPages: {
     path: String,
+    pageAlreadyScraped: Function, // (url, context) => {}
     items: [
       {
         type: String,
