@@ -50,6 +50,6 @@ module.exports = async (req, res) => {
     }
   })
   
-  res.json(items)
+  res.json(items.products)
 }
 ```
