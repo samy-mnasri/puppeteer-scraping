@@ -50,7 +50,7 @@ module.exports = async (req, res) => {
     puppeteer,
     options: { headless: true },
     plugins: [StealthPlugin],
-    proxies: ['1.2.3.4', '5.6.7.8']
+    proxies: ['http://1.2.3.4', 'http://5.6.7.8']
     method
   })
   
